@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pub Golf Pompey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <h1>Pub Golf Pompey</h1>
+    <h1 id="playerName"></h1>
+</header>
+<main>
+    <section id="playerScreen">
+        <h2>Holes:</h2>
+        <input id="oneScore" type="number" min="1" tabindex="1" placeholder="0" autofocus>
+        <p>O'Neills - Medium sized wine (175ml)</p>
+        <input id="twoScore" type="number" min="1" tabindex="1" placeholder="0" autofocus>
+        <p>Fat Fox - Pint of Beer</p>
+        <input id="threeScore" type="number" min="1" tabindex="1" placeholder="0" autofocus>
+        <p>Lord John Russel - Shot</p>
+        <input id="fourScore" type="number" min="1" tabindex="1" placeholder="0" autofocus>
+        <p>The Kings - Pint of Ale</p>
+        <input id="fiveScore" type="number" min="1" tabindex="1" placeholder="0" autofocus>
+        <p>One Eyed Dog - Mixer i.e. vodka and coke</p>
+        <input id="sixScore" type="number" min="1" tabindex="1" placeholder="0" autofocus>
+        <p>The Deco - Pint of Cocktail</p>
+        <input id="sevenScore" type="number" min="1" tabindex="1" placeholder="0" autofocus>
+        <p>The Honest Politician - Shot</p>
+        <input id="eightScore" type="number" min="1" tabindex="1" placeholder="0" autofocus>
+        <p>Student Union - Snakebite</p>
+        <p id="playerScore">Total: </p>
+    </section>
+
+    <section id="getName">
+        <h2>Enter your name: </h2>
+        <input id="userName" type="text" tabindex="2" placeholder="Name" autofocus>
+        <input id="enterNameBtn" type="button" value="Confirm">
+    </section>
+
+    <section >
+        <h2>Rules:</h2> 
+        <ol>
+            <li>Drinks must be consumed within 15 minutes.</li>
+            <li>If you are sick, +10 to your score.</li>
+            <li>No tasting drinks before drinking them.</li>
+            <li>Drinking must be witnessed by an organiser.</li>
+            <li>Shots have to be Vodka, Tequila, or Jäger.</li>
+            <li>Mixer can be Vodka, Rum, or Malibu with any mixer (e.g. Coke, Lemonade, etc..).</li>
+            <li>The player with the lowest score wins.</li>
+        </ol>
+    </section>
+
+</main>
+<script src="golf.js"></script>
+</html>

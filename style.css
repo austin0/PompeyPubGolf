@@ -1,0 +1,85 @@
+:root {
+  --bg: #FFF;
+  --fg: #111;
+  --hibg: #0076A6;
+  --hifg: #000;
+}
+html {
+  font-family: "Aero", "Calibri", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+input {
+  background: var(--bg);
+  color: var(--fg);
+  padding: 0.5ex 1ex;
+  border: var(--fg) solid 1px;
+  font-family: "Aero", "Calibri", sans-serif;
+  font-size: 1.5em;
+  margin-left: 0.1em;
+}
+
+input::selection {
+  background: var(--hibg);
+  color: white;
+}
+
+input[type='number'] {
+  text-align: right;
+  width: 5em;
+  float: right;
+}
+
+input:focus {
+  outline: 0.25rem var(--hibg) solid;
+}
+
+#playerScreen {
+  display: none;
+}
+
+#playerScore {
+  font-size: 3rem;
+  text-decoration: bold;
+}
+
+p {
+  font-size: 2rem;
+  margin-right: 1em;
+}
+
+@media screen and (max-width: 70rem) {
+  main, header {
+    max-width: 40em;
+    position: relative;
+    margin: 0 auto;
+  }
+  input {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (min-width: 70rem) {
+  main, header {
+    max-width: 70rem;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  section {
+    display: inline-block;
+    width: 30rem;
+  }
+}
