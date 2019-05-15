@@ -23,6 +23,7 @@ document.getElementById("enterNameBtn").onclick = function () {
     var name = document.getElementById("userName").value;
     document.querySelector('#playerName').textContent = name;
     document.getElementById("getName").style.display = "none";
+    document.getElementById("rulesList").style.fontSize = "1em";
     document.getElementById("playerScreen").style.display = "inline-block";
 };
 
