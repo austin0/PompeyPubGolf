@@ -13,7 +13,7 @@ html {
 input {
   background: var(--bg);
   color: var(--fg);
-  padding: 0.5ex 1ex;
+  /*padding: 0.5ex 1ex;*/
   border: var(--fg) solid 1px;
   font-family: "Aero", "Calibri", sans-serif;
   font-size: 1.5em;
@@ -49,18 +49,29 @@ p {
 
 @media screen and (max-width: 70rem) {
   main, header {
-    max-width: 40em;
+    /*max-width: 40em;*/
     position: relative;
     margin: 0 auto;
+    text-align: center;
   }
   input {
     font-size: 2.5em;
+    padding:0.1em
+  }
+
+  section {
+    display: inline-block;
+    width: 90%;
+  }
+
+  p {
+    font-size: 2.5rem;
   }
 }
 
 @media screen and (min-width: 70rem) {
   main, header {
-    max-width: 70rem;
+    /*max-width: 70rem;*/
     position: relative;
     margin: 0 auto;
   }
