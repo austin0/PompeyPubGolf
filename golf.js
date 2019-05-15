@@ -4,12 +4,7 @@ for (const input of inputs) {
 }
 
 function recalculate() {
-    //const total = "";
     const scoreList = gatherScoreFromPage();
-     //for (const score of scoreList) {
-        //total += score;
-        //console.log(total);
-     //}
      document.querySelector('#playerScore').textContent = "Total: " + scoreList;
 }
 
@@ -18,12 +13,6 @@ function gatherScoreFromPage() {
   
     const Inputs = document.querySelectorAll('input[type="number"]');
     for (const input of Inputs) {
-      //if (input.value === '') {
-        //console.log('no data', input);
-        //return null;
-      //}
-      //retval.push(Number(input.value));
-      //console.log(input.value)
         retval += Number(input.value);
         console.log(retval);
     } 

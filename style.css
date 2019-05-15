@@ -13,7 +13,6 @@ html {
 input {
   background: var(--bg);
   color: var(--fg);
-  /*padding: 0.5ex 1ex;*/
   border: var(--fg) solid 1px;
   font-family: "Aero", "Calibri", sans-serif;
   font-size: 1.5em;
@@ -49,7 +48,6 @@ p {
 
 @media screen and (max-width: 70rem) {
   main, header {
-    /*max-width: 40em;*/
     position: relative;
     margin: 0 auto;
     text-align: center;
@@ -66,12 +64,13 @@ p {
 
   p {
     font-size: 2.5rem;
+    padding-right: 0.2em;
   }
 }
 
 @media screen and (min-width: 70rem) {
   main, header {
-    /*max-width: 70rem;*/
+    max-width: 70rem;
     position: relative;
     margin: 0 auto;
   }
